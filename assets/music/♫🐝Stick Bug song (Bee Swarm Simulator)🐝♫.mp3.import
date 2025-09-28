@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://l33a5r0jxm7f"
+path="res://.godot/imported/♫🐝Stick Bug song (Bee Swarm Simulator)🐝♫.mp3-84b40b6a0e7845ecb8ed2352adb3ea51.mp3str"
+
+[deps]
+
+source_file="res://assets/music/♫🐝Stick Bug song (Bee Swarm Simulator)🐝♫.mp3"
+dest_files=["res://.godot/imported/♫🐝Stick Bug song (Bee Swarm Simulator)🐝♫.mp3-84b40b6a0e7845ecb8ed2352adb3ea51.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

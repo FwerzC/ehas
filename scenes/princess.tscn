@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c055tn7e1i4vy"]
+
+[ext_resource type="PackedScene" uid="uid://df0kqgpqwhkdy" path="res://scenes/prinxess.tscn" id="1_o4716"]
+
+[node name="prinxess" instance=ExtResource("1_o4716")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+animation = &"default"
+autoplay = "default"

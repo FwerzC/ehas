@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://df0kqgpqwhkdy"]
+
+[ext_resource type="Texture2D" uid="uid://bu2aj78ihqh2s" path="res://assets/sprites/guinevere_.png" id="1_5ytwf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awebl"]
+atlas = ExtResource("1_5ytwf")
+region = Rect2(0, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6x1u"]
+atlas = ExtResource("1_5ytwf")
+region = Rect2(32, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a082k"]
+atlas = ExtResource("1_5ytwf")
+region = Rect2(64, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jppcq"]
+atlas = ExtResource("1_5ytwf")
+region = Rect2(96, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k2veq"]
+atlas = ExtResource("1_5ytwf")
+region = Rect2(224, 196, 32, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hbgy1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_awebl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y6x1u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a082k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jppcq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k2veq")
+}],
+"loop": true,
+"name": &"sleepy",
+"speed": 5.0
+}]
+
+[node name="prinxess" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_hbgy1")
+animation = &"sleepy"

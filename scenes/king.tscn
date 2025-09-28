@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://b023y4sg8l8dp"]
+
+[ext_resource type="Texture2D" uid="uid://dnkvh68yfk8gt" path="res://assets/sprites/arthurPendragon_.png" id="1_div27"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fn2xo"]
+atlas = ExtResource("1_div27")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmgs4"]
+atlas = ExtResource("1_div27")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h63cl"]
+atlas = ExtResource("1_div27")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8jf3"]
+atlas = ExtResource("1_div27")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y26ih"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fn2xo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmgs4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h63cl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o8jf3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_y26ih")
+autoplay = "default"

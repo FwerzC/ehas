@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://185eg8p88eeg"]
+
+[ext_resource type="Texture2D" uid="uid://dqekuhme45i2s" path="res://assets/sprites/morganLeFay_.png" id="1_rkjkb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rkjkb"]
+atlas = ExtResource("1_rkjkb")
+region = Rect2(128, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67p08"]
+atlas = ExtResource("1_rkjkb")
+region = Rect2(160, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86llw"]
+atlas = ExtResource("1_rkjkb")
+region = Rect2(192, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vlfu"]
+atlas = ExtResource("1_rkjkb")
+region = Rect2(224, 0, 32, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ar4a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rkjkb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67p08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86llw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vlfu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7ar4a")
+autoplay = "default"

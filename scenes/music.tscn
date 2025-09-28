@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://leynegsf8w03"]
+
+[ext_resource type="AudioStream" uid="uid://l33a5r0jxm7f" path="res://assets/music/♫🐝Stick Bug song (Bee Swarm Simulator)🐝♫.mp3" id="1_05ggv"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_05ggv")
+autoplay = true
+bus = &"music"

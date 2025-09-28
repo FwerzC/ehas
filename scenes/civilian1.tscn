@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://bf256t0kc7quh"]
+
+[ext_resource type="Texture2D" uid="uid://bedw1rqs2p77l" path="res://assets/sprites/ladyOfTheLake_.png" id="1_80odb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_80odb"]
+atlas = ExtResource("1_80odb")
+region = Rect2(128, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qy1yn"]
+atlas = ExtResource("1_80odb")
+region = Rect2(160, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxiem"]
+atlas = ExtResource("1_80odb")
+region = Rect2(192, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oo2n0"]
+atlas = ExtResource("1_80odb")
+region = Rect2(224, 0, 32, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sr5do"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_80odb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qy1yn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxiem")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oo2n0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_sr5do")
+autoplay = "default"
